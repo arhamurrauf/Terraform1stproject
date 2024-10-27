@@ -1,4 +1,10 @@
 # Terraform1stproject
+
+provider "aws" {
+  region = "us-west-2"
+}
+
+
 resource "aws_iam_user" "lb" {
   name = "loadbalancer"
   path = "/system/"
